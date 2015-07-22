@@ -1,0 +1,96 @@
+---
+layout: default
+---
+<div class="page__content">
+    <header class="page__header">
+        <div class="wrapper">
+            <h1 class="page__title">{{ page.title }}</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </section>
+
+    <div class="gallery">
+        {% assign itemsByStatus = site.data[page.data-file] | group_by: "status" %}
+        {% assign items = site.data[page.data-file] %}
+
+        <section class="wrapper">
+            <div class="gallery-item-list">
+                {% for item in items %}
+                {% if item.status != 'archived' %}
+                <div class="gallery__item__wrapper{% cycle group.name: ' clear', '' %}{% if group.name == 'old' %} collage{% endif %}" data-id="{{ forloop.index }}">
+                    <article class="gallery__item">
+                        <div class="gallery__item__title">{{ item.name }} <span>{{ item.year }}</span></div>
+                        <div class="gallery__item__desc">
+                            {{ item.desc }}
+                        </div>
+
+                        <div class="gallery__item__content">
+                            {% if item.images %}
+                            <div class="gallery__item__images">
+                                {% for image in item.images %}
+                                <div class="gallery__item__image__wrapper">
+                                    {% if item.status == 'old' %}
+                                    <div style="position: relative;">
+                                        <img src="{{ site.baseurl }}/images/{{ image }}" />
+                                        <div class="gallery__item__image--collage"></div>
+                                    </div>
+                                    {% else %}
+                                    <div class="gallery__item__image" style="background-image: url('{{ site.baseurl }}/images/{{ image }}'); background-position: 0 0; background-size: cover;"></div>
+                                    {% endif %}
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+
+
+
+                            <div class="gallery__item__info">
+                                {% if item.note %}
+                                <p class="gallery__item__note">
+                                    {{ item.note }}
+                                </p>
+                                {% endif %}
+
+                                <div class="gallery__item__tags">
+                                    {% assign tags = item.tags | split: "," %}
+                                    {% for tag in tags %}
+                                    <div class="gallery__item__tag">
+                                        {{ tag }}
+                                    </div>
+                                    {% endfor %}
+                                </div>
+
+
+
+                                {% if item.links %}
+                                <div class="gallery__item__links">
+                                    {% for link in item.links %}
+                                    {% if link.type == 'document' %}
+                                    {% assign type = 'file-text-o' %}
+                                    {% else %}
+                                    {% assign type = 'link' %}
+                                    {% endif %}
+                                    <i class="fa fa-{{ type }}"></i><a class="gallery__item__link" href="{{ link.url }}">{{ link.name }}</a><br/>
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="gallery__item-view">
+    <h1 class="gallery__item-view__title"></h1>
+    <img class="gallery__item-view__image" src="" />
+</div>

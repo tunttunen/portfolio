@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+{% include template/head.html %}
+<body>
+    {% include template/nav.html %}
+
+    {{ content }}
+
+    {% include template/footer.html %}
+
+    {% for js in site.js %}
+    <script src="{{ site.baseurl }}/js/{{ js }}.js"></script>
+    {% endfor %}
+
+    {% include google-analytics.html %}
+</body>
+</html>

@@ -1,0 +1,121 @@
+/**
+ * Footer
+ */
+
+.footer {
+    color: $color-grey;
+    position: relative;
+    padding: ($spacing-unit * 3) 0;
+    background-color: darken($color-grey-dark, 15%);
+    text-align: center;
+}
+
+.footer__heading {
+    color: $color-white;
+    font-size: $font-size-larger;
+    font-family: $font-heading;
+    text-transform: uppercase;
+    margin-bottom: $spacing-unit / 2;
+
+    @include media-query($on-palm) {
+        font-size: $font-size-large;
+    }
+}
+
+.footer__text {
+    margin-top: $spacing-unit;
+    line-height: 1.5;
+
+    @include media-query($on-palm) {
+        font-size: $font-size-small;
+    }
+}
+
+.footer__text__heading {
+    line-height: 1.3;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: $font-heading;
+    margin-bottom: $spacing-unit / 4;
+    text-transform: uppercase;
+}
+
+
+
+/**
+ * Contacts-list
+ */
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+}
+
+.contact-list__item {
+    display: inline-block;
+    position: relative;
+    margin: 0 ($spacing-unit / 4) 0 0;
+
+    &.last {
+        margin: 0;
+    }
+}
+
+.contact-list__item__link {
+    background-size: 100%;
+    box-shadow: 0 0 5px rgba(#000000, 0.1);
+    border: 1px solid rgba(#fff, 0.2);
+    @include borderRadius(2px, 2px, 2px, 2px);
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+
+    &:hover {
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+
+        -ms-transform: translate(0, -5px) scale(1.1, 1.1); /* IE 9 */
+        -webkit-transform: translate(0, -5px) scale(1.1, 1.1); /* Chrome, Safari, Opera */
+        transform: translate(0, -5px) scale(1.1, 1.1);
+
+        @include borderRadius(2px, 2px, 2px, 2px);
+        box-shadow: 0 5px 12px rgba(#000000, 0.15);
+    }
+
+    @include media-query($on-palm) {
+        height: 48px;
+        width: 48px;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+
+.icon-email {
+    background-image: url('../images/icons/email_128.png');
+}
+
+.icon-twitter {
+    background-image: url('../images/icons/twitter_128.png');
+}
+
+.icon-linkedin {
+    background-image: url('../images/icons/linkedin_128.png');
+}
+
+.icon-facebook {
+    background-image: url('../images/icons/facebook_128.png');
+}
+
+.icon-github {
+    background-image: url('../images/icons/github_128.png');
+}

@@ -1,0 +1,20 @@
+/**
+ * Fonts and text
+ */
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400|Khand:300,400,500|Source+Sans+Pro:300,400);
+
+$font-title: "Quicksand";
+$font-heading: "Khand";
+$font-text: "Source Sans Pro";
+
+$font-size-normal: 18px;
+$font-size-smallest: $font-size-normal * 0.75;
+$font-size-small: $font-size-normal * 0.875;
+$font-size-medium: $font-size-normal * 1.35;
+$font-size-large: $font-size-normal * 1.75;
+$font-size-larger: $font-size-normal * 2.5;
+$font-size-largest: $font-size-normal * 3.5;
+
+// Base
+$base-line-height: 1.7;
+$spacing-unit: 30px;

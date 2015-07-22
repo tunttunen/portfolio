@@ -1,0 +1,114 @@
+/*
+ * Frontpage specific styles
+ */
+.front-page {
+    .page__content {
+        margin-top: 600px;
+    }
+
+    .nav {
+        background: url('../images/header_bg.jpg') center top;
+        background-size: 100%;
+
+        @include media-query(1080px) {
+            background-size: 1080px auto;
+        }
+    }
+
+    .nav__name {
+        color: darken($color-blue, 20%);
+        top: -50px;
+        text-shadow: 1px 1px 1px rgba(#fff, 0.8);
+        -webkit-transition: -webkit-transform 0.5s ease;
+        -moz-transition: -moz-transform 0.5s ease;
+        transition: transform 0.5s ease;
+        font-weight: 400;
+    }
+
+    .nav__logo {
+        top: -50px;
+        -webkit-transition: -webkit-transform 0.5s ease;
+        -moz-transition: -moz-transform 0.5s ease;
+        transition: transform 0.5s ease;
+    }
+
+    .nav__link {
+        text-shadow: 1px 1px 1px rgba(#fff, 0.5);
+
+        &,
+        &:visited {
+            color: darken($color-blue, 30%);
+        }
+
+        &:hover {
+            color: $color-white;
+            text-decoration: none;
+            background-color: rgba($color-blue, 0.1);
+        }
+
+        @include media-query(700px) {
+            &,
+            &:visited {
+                color: $color-white;
+                text-shadow: 1px 1px 1px rgba(#000, 0.1);
+            }
+        }
+    }
+
+    .nav__menu__btn {
+        text-shadow: 1px 1px 1px rgba(#fff, 0.5);
+
+        &,
+        &:visited,
+        &:active {
+            color: darken($color-blue, 30%);
+        }
+
+        &:hover {
+            color: darken($color-blue, 15%);
+        }
+    }
+
+    .quick-link {
+        width: 50%;
+        display: block;
+        float: left;
+
+        @include media-query(480px) {
+            width: 100%;
+            float: none;
+        }
+    }
+
+    .quick-link__link {
+        width: auto;
+        display: block;
+        text-align: center;
+        background-color: darken($color-grey-dark, 20%);
+        @include borderRadius(4px, 4px, 4px, 4px);
+        line-height: 3;
+
+        &.left {
+            margin-right: $spacing-unit / 2;
+
+            @include media-query(480px) {
+                margin-right: 0;
+                margin-bottom: $spacing-unit / 4;
+            }
+        }
+
+        &.right {
+            margin-left: $spacing-unit / 2;
+
+            @include media-query(480px) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .quick-link__link:hover {
+        background-color: $color-red;
+        color: darken($color-grey-dark, 20%);
+        text-decoration: none;
+    }
+}

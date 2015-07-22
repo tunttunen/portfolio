@@ -1,0 +1,478 @@
+#
+# 2015
+#
+
+- status: "completed"
+  year: 2011&ndash;2014
+  name: "eKansio"
+  type:
+  desc: "Individual web projects"
+  tags: "HTML, CSS, JavaScript, jQuery, PHP, Custom PHP framework, eKansio platform, MySQL, Customer interface, WordPress"
+  note: "Multiple individual projects related to eKansio ERP platform. For example, a truck trailer configurator for a trailer company (used to create trailer selling offers). Majority of projects at eKansio were independent work."
+
+#
+# 2011
+#
+
+- status: "completed"
+  year: 2011
+  name: "Luuppi ry"
+  type:
+  desc: "Website frontend and backend"
+  tags: "Project Management, HTML, CSS, JavaScript, PHP, CodeIgniter, Photoshop"
+  note: "University project that I ran as a Project Manager. My main areas of responsibility were all tech/coding stuff and schedule planning. I also participated in the development (frontend)."
+  images:
+    - "references/luuppi1.jpg"
+    - "references/luuppi2.jpg"
+
+- status: "completed"
+  year: 2011
+  name: "Kimono"
+  type:
+  desc: "Website prototype"
+  tags: "HTML, CSS, Prototype, Photoshop"
+  note: "University project in which we designed an online store prototype around the given context idea. I did all the coding and graphics for the project."
+  images:
+    - "references/kimono1.jpg"
+    - "references/kimono2.jpg"
+
+#
+# 2010
+#
+- status: "completed"
+  year: 2010
+  name: "Sharppi"
+  type:
+  desc: "Flow chart editor (Windows)"
+  tags: "C#, .NET"
+  note: "University project, in which we had to create a flow chart editor. Documents were saved in XML format and there was an option to print or export the document as an image file. I worked in a team of three great ."
+  images:
+    - "references/sharppi.jpg"
+
+- status: "completed"
+  year: 2010
+  name: "Polku"
+  type:
+  desc: "Process management system frontend and backend"
+  tags: "HTML, CSS, PHP, CodeIgniter, jQuery, MySQL, Photoshop"
+  note: "University project where I worked as a Lead Developer. We created a process management system to manage projects, events, meetings and such. I did most of the technical decisions and also designed the layout."
+  images:
+    - "references/polku1.jpg"
+    - "references/polku2.jpg"
+
+- status: "archived"
+  year: 2010
+  name: "Tapion Hieronta"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS"
+  images:
+    - "references/tapionhieronta1.jpg"
+
+#
+# 2009
+#
+- status: "completed"
+  year: 2009
+  name: "Excalite"
+  type:
+  desc: "Website frontend and backend"
+  tags: "HTML, CSS, PHP, MySQL, Photoshop"
+  note: "Developed a website for a company that promoted its product line. The backend had functionality for managing the catalog and site content."
+  images:
+    - "references/excalite1.jpg"
+
+- status: "archived"
+  year: 2009
+  name: "Kankareen Paalutus Oy"
+  type:
+  desc: "Website layout"
+  tags: "Photoshop"
+  note: "One of the layout sketches that I made for this company."
+  images:
+    - "references/kankareenpaalutus1.jpg"
+
+- status: "archived"
+  year: 2009
+  name: "Smart Drivers"
+  type:
+  desc: "Website layout sketching"
+  tags: "Photoshop"
+  note: "One of the layout sketches of the time."
+  images:
+    - "references/smart-drivers1.png"
+
+- status: "completed"
+  year: 2009
+  name: "Results service"
+  type:
+  desc: "Website frontend and backend"
+  tags: "HTML, CSS, PHP, MySQL, Photoshop"
+  note: "University project for student representative elections, in which I developed the service in a team of two."
+  images:
+    - "references/tikohtyo1.jpg"
+
+#
+# 2008
+#
+- status: "completed"
+  year: 2008
+  name: "Mediatraffic"
+  type:
+  desc: "Website layout"
+  tags: "Photoshop"
+  note: "Designed a new website layout for a web hosting company."
+  images:
+    - "references/mediatraffic1.jpg"
+
+- status: "completed"
+  year: 2008
+  name: "A-Tiilikate Oy"
+  type:
+  desc: "Website layout"
+  tags: "Photoshop"
+  note: "One of the works that I have done for A-Tiilikate along the years. This one was for a website."
+  images:
+    - "references/a-tiilikate1.jpg"
+
+#
+# 2007
+#
+- status: "completed"
+  year: 2007
+  name: "Taidox Oy"
+  type:
+  desc: "Website frontend and backend"
+  tags: "HTML, CSS, PHP, MySQL, Photoshop"
+  note: "Web portal revision project for a cleaning service company located in Tampere."
+  images:
+    - "references/taidox1.jpg"
+
+- status: "completed"
+  year: 2007
+  name: "C35"
+  type:
+  desc: "3D logo"
+  tags: "Cinema 4D"
+  note: "Logo for an international online gaming team. I got interested in 3D modelling earlier at some point and did couple of works."
+  images:
+    - "references/c35.jpg"
+
+- status: "archived"
+  year: 2007
+  name: "Team Retirees"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, PHP, Photoshop"
+  note: "My last Counter-Strike online gaming team for which I also made a small website."
+  images:
+    - "references/retirees1.jpg"
+
+- status: "completed"
+  year: 2007
+  name: "Rockets"
+  type:
+  desc: "Website frontend"
+  tags: "HTML, CSS, Photoshop"
+  note: "Website for an ice hockey team. The backend was delivered by a third party."
+  images:
+    - "references/rockets1.jpg"
+
+- status: "archived"
+  year: 2007
+  name: "Lännen Tractors Oy"
+  type:
+  desc: "Ad banners"
+  tags: "Flash, Photoshop"
+  note: "Some flash ad banners."
+
+- status: "archived"
+  year: 2007
+  name: "A-Tiilikate oy"
+  type:
+  desc: "Ad banners"
+  tags: "Flash, Photoshop"
+  note: "Some flash ad banners."
+
+#
+# 2006
+# todo: not added to the collage yet
+- status: "archived"
+  year: 2006
+  name: "Heikura & Leino Oy"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  images:
+    - "references/heikura1.jpg"
+
+# todo: not added to the collage yet
+- status: "archived"
+  year: 2006
+  name: "Pentti Jussilainen"
+  type:
+  desc: "Website layout"
+  tags: "HTML, CSS, Photoshop"
+  images:
+    - "references/penttijussilainen1.jpg"
+  note: "Did couple of layout sketches for a website."
+
+- status: "archived"
+  year: 2006
+  name: "A-Tiilikate Oy"
+  type:
+  desc: "Website layout"
+  tags: "Photoshop"
+  note: "A series of website layout sketches and website design."
+
+
+#
+# 2005
+#
+
+- status: "archived"
+  year: 2005
+  name: "Team EWN v3"
+  type:
+  desc: "Website frontend and backend"
+  tags: "HTML, CSS, PHP, Photoshop"
+  note: "In 2005 me and my buddies had an idea... let's put our first Counter-Strike clan together again. In addition, I made us a website with administration capabilities."
+  images:
+    - "references/ewn3.jpg"
+
+
+#
+# 2004
+#
+- status: "completed"
+  year: 2004
+  name: "Periferia"
+  type:
+  desc: "Website frontend and backend"
+  tags: "HTML, CSS, PHP, MySQL, Photoshop"
+  note: "Website with a custom content management system."
+  images:
+    - "references/periferia1.jpg"
+
+- status: "archived"
+  year: 2004
+  name: "Buck's Team"
+  type:
+  desc: "Website frontend and backend"
+  tags: "HTML, CSS, PHP, MySQL, Photoshop"
+  note: "A similar project to SaraSport website (2003), for which I created an administration backend and frontend."
+
+- status: "archived"
+  year: 2004
+  name: "FT Tuomas Sallinen"
+  type:
+  desc: "Simple website frontend and backend"
+  tags: "HTML, CSS, PHP, Photoshop"
+  note: "Website with a light backend functionality."
+  images:
+    - "references/sallinen.jpg"
+
+- status: "completed"
+  year: 2004
+  name: "Mainos Tunttunen Oy"
+  type:
+  desc: "(Mostly) Static website"
+  tags: "HTML, CSS, JavaScript, Photoshop"
+  note: "Of course, Mainos Tunttunen Oy required a website to represent its services etc."
+  images:
+    - "references/mtoy1.jpg"
+
+#
+# 2003
+#
+- status: "completed"
+  year: 2003
+  name: "Loimaan Sarasport"
+  type:
+  desc: "Website frontend and backend"
+  tags: "HTML, CSS, JavaScript, PHP, MySQL"
+  note: "This was my first project that required more than a static website. I implemented a small content management system behind the frontend for news, products and such."
+  images:
+    - "references/sarasport1.jpg"
+    - "references/sarasport2.jpg"
+
+- status: "archived"
+  year: 2003
+  name: "Hydoring"
+  type:
+  desc: "Static website"
+  tags: "HTML, JavaScript"
+  note: "If I remember correctly, I did my first dynamic menu drop-downs with JavaScript in this project."
+  images:
+    - "references/hydoring1.jpg"
+
+- status: "archived"
+  year: 2003
+  name: "Loimaan Kiinteistökeskus"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "Some graphics etc. tasks for a website."
+  images:
+    - "references/loimaanseudunkk1.jpg"
+
+- status: "archived"
+  year: 2003
+  name: "Loimaan Apteekki"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "A website for a local pharmacy drug store."
+  images:
+    - "references/lkapteekki1.jpg"
+
+- status: "archived"
+  year: 2003
+  name: "Solupak"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "I started to do some websites through my dad's ad agency in 2003."
+  images:
+    - "references/solupak1.jpg"
+
+- status: "archived"
+  year: 2003
+  name: "Rocksberg"
+  type:
+  desc: "CD cover graphics"
+  tags: "Photoshop"
+  note: "Did some CD covers back in 2003 or something like that. This was the only one I found."
+  images:
+    - "references/rocksberg1.jpg"
+
+#
+# 2002
+#
+
+- status: "archived"
+  year: 2002
+  name: "Team DC"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "One of the coolest outputs of mine that I have found from my archives. Liked this a lot back then."
+  images:
+    - "references/dc1.jpg"
+
+- status: "archived"
+  year: 2002
+  name: "St. Raiders"
+  type:
+  desc: "Website logo graphics"
+  tags: "Photoshop"
+  note: "Did not find other graphics considering the St. Raiders online gaming team (aka striders, a Quake 3 Rocket Arena 3 clan). Those times in striders were one of my top memories in my gaming \"career\". Way too much adrenaline involved to think of anything negative from those times."
+  images:
+    - "references/striders1.jpg"
+
+- status: "archived"
+  year: 2002
+  name: "Loimaan Han Moo Do"
+  type:
+  desc: "Website layout"
+  tags: "Photoshop"
+  note: "A friend of mine asked to do graphics for a \"fight club\" website. ;)"
+  images:
+    - "references/loimaanhanmoodo1.jpg"
+
+- status: "archived"
+  year: 2002
+  name: "Deluxe"
+  type:
+  desc: "Website layout"
+  tags: "Photoshop"
+  note: "I did not find the completed work, but If I remember correctly, deluxe was a quite good Quake 3 Rocket Arena 3 clan back then."
+  images:
+    - "references/deluxe1.jpg"
+
+- status: "archived"
+  year: 2002
+  name: "Quadrigonus"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "My first Quake 3 Rocket Arena 3 clan ever &mdash; and a website for it. Best game ever when the adrenaline rushes are considered."
+  images:
+    - "references/quadrigonus1.jpg"
+
+- status: "archived"
+  year: 2002
+  name: "Team SPR"
+  type:
+  desc: "Website layout"
+  tags: "Photoshop"
+  note: "One of the team SPR (Counter-Strike clan) website layouts that I did. If I remember correctly, this was chosen as the final layout for the site."
+  images:
+    - "references/spr1.jpg"
+
+- status: "archived"
+  year: 2002
+  name: "Deceptakahn"
+  type:
+  desc: "Website layout"
+  tags: "Photoshop"
+  note: "Website sketch for a Counter-Strike online gaming clan. No idea where the completed work is in my archives."
+  images:
+    - "references/deceptakahn1.jpg"
+
+- status: "archived"
+  year: 2002
+  name: "Team EWN v2"
+  type:
+  desc: "Website layout sketch"
+  tags: "Photoshop"
+  note: "Did some sketching for the new website, which was never released after all. We were busy training and evolving. There were also several versions from this sketch and it was also suggested as other teams' website layout."
+  images:
+    - "references/ewn2.jpg"
+
+#
+# 2001
+#
+
+- status: "archived"
+  year: 2001
+  name: "Team EWN"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "Me and my buddies founded a Counter-Strike online gaming clan around the year 2000."
+  images:
+    - "references/ewn1.png"
+
+- status: "archived"
+  year: 2001
+  name: "Hell's Army"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "Website for a Counter-Strike online gaming team."
+  images:
+    - "references/hell1.jpg"
+
+- status: "archived"
+  year: 2001
+  name: "Moramatsi"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "Counter-Strike online gaming matchmaking group needed a website, so I decided to make one for the guys."
+  images:
+    - "references/moramatsi1.jpg"
+
+# collage from old works
+
+- status: "old"
+  year: 2001&ndash;2006
+  name: "Misc. works"
+  type:
+  desc: "Websites and graphics"
+  tags: "HTML, CSS, PHP, JavaScript, Photoshop, Flash"
+  note: "
+    There have been projects for clients, such as Hydoring, Lännen Tractors, Loimaan Apteekki, Loimaan Seudun Kiinteistökeskus, Buck's Team, Heikura & Leino, Pentti Jussilainen and FT Tuomas Sallinen. In addition, I have worked on many hobby projects for online gaming team websites and designs."
+  images:
+    - "references/old_references_v2.jpg"

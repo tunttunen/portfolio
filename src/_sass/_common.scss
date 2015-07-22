@@ -1,0 +1,91 @@
+/**
+ * Common
+ */
+
+.box {
+    /*@include gradientColor(darken($color-green, 10%), darken($color-green, 20%));*/
+    color: $color-white;
+
+    .page__title {
+        margin-top: 0;
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.box--blue {
+    @include gradientColor(darken($color-blue, 15%), darken($color-blue, 20%));
+}
+
+.box--red {
+    @include gradientColor(darken($color-red, 0%), darken($color-red, 5%));
+}
+
+.box--grey {
+    @include gradientColor(darken($color-grey-dark, 10%), darken($color-grey-dark, 15%));
+}
+
+.box__text {
+    font-size: $font-size-large;
+    font-family: $font-heading;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(#000, 0.1);
+    margin-bottom: $spacing-unit;
+
+    @include media-query($on-laptop) {
+        font-size: $font-size-medium;
+    }
+
+    @include media-query($on-palm) {
+        font-size: $font-size-normal;
+        margin-bottom: $spacing-unit / 2;
+    }
+}
+
+.button-link {
+    border: 3px solid $color-blue;
+    color: $color-grey-dark;
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    @include borderRadius(6px, 6px, 6px, 6px);
+    font-family: $font-heading;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: $spacing-unit;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.centered {
+    text-align: center;
+}
+
+a.twitter-timeline {
+    color: $color-grey-dark;
+    font: $font-heading;
+}
+
+/* Global transitions */
+p,
+h1,
+h2,
+h3,
+.video {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+/* iOS z-index hack */
+.page__content,
+.nav,
+.footer {
+    -webkit-transform:translateZ(1px);
+    -moz-transform:translateZ(1px);
+    -ms-transform:translateZ(1px);
+    -o-transform:translateZ(1px);
+    transform:translateZ(1px);
+}

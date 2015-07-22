@@ -1,0 +1,40 @@
+---
+order: 5
+layout: front-page
+permalink: /
+---
+
+<div class="box box--blue">
+    <div class="wrapper">
+        <h1 class="page__title">Welcome</h1>
+        <div class="box__text">
+            This is the portfolio of my digital creations.
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <h2>Latest on the <a href="blog">blog</a></h2>
+    {% include post-list.html %}
+
+    <br/>
+</div>
+
+<div class="box box--grey">
+    <div class="wrapper">
+        <div class="box__text">Want to check out some <a href="references">references</a> or <a href="projects">personal projects</a>?<br/>
+            Or just looking for <a href="#contacts">contacts</a>?</div>
+        <div class="box__text">
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <h2>Recent Tweets</h2>
+    <div class="box__text">
+        {% include twitter-feed.html %} <br/>
+        {% include twitter-follow-button.html %}
+    </div>
+</div>
+

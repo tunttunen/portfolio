@@ -1,0 +1,141 @@
+.nav {
+    position: fixed;
+    text-align: right;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*@include gradientColor(darken($color-blue, 11%), lighten($color-blue, 5%));*/
+    @include gradientColor(darken($color-blue, 10%), darken($color-blue, 15%));
+    z-index: 9999;
+    white-space: nowrap;
+    height: 60px;
+
+    .wrapper {
+        padding: 0 $spacing-unit;
+
+        @include media-query($on-palm) {
+            padding: 0 ($spacing-unit / 2);
+        }
+    }
+}
+
+.nav__logo {
+    position: relative;
+    display: inline-block;
+    float: left;
+    background-image: url('../images/portfolio_logo-02.png');
+    background-size: 100%;
+    top: 6px;
+    width: 46px;
+    height: 46px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.nav__name {
+    position: relative;
+    display: inline-block;
+    float: left;
+    color: $color-white;
+    top: 12px;
+    font-family: $font-title;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-left: $spacing-unit / 4;
+    text-align: left;
+    line-height: 1;
+    text-shadow: 0 0 4px rgba(#000, 0.2);
+}
+
+.nav__links__wrapper {
+    display: block;
+
+    @include media-query(700px) {
+        margin: ($spacing-unit / 2) ($spacing-unit / 4);
+    }
+}
+
+.nav__links {
+    display: block;
+    position: relative;
+
+    @include media-query(700px) {
+        @include gradientColor(darken($color-blue, 40%), darken($color-blue, 35%));
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 60px;
+        height: 0;
+
+        &.show-as-menu {
+            height: auto;
+        }
+    }
+}
+
+.nav__link {
+    text-transform: uppercase;
+    font-family: $font-title;
+    font-size: $font-size-small;
+    line-height: 60px;
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: bottom;
+    text-shadow: 1px 1px 1px rgba(#000, 0.3);
+    font-weight: 400;
+
+    &,
+    &:visited {
+        color: lighten($color-blue, 35%);
+    }
+
+    &.active,
+    &:hover {
+        color: $color-white;
+        text-decoration: none;
+        background-color: rgba(#000, 0.1);
+        text-shadow: none;
+    }
+
+    @include media-query(700px) {
+        &,
+        &:visited {
+            color: lighten($color-blue, 35%);
+            text-shadow: 1px 1px 1px rgba(#000, 0.1);
+        }
+
+        padding: ($spacing-unit / 4) ($spacing-unit / 2);
+        display: block;
+        line-height: 2;
+    }
+}
+
+.nav__menu__btn {
+    position: absolute;
+    top: 0;
+    right: $spacing-unit / 2;
+    display: none;
+    font-size: 46px;
+    line-height: 60px;
+    text-shadow: 1px 1px 1px rgba(#000, 0.2);
+
+    &,
+    &:visited,
+    &:active {
+        color: lighten($color-blue, 35%);
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    @include media-query(700px) {
+        display: block;
+    }
+}

@@ -1,0 +1,120 @@
+/**
+ * Site header
+ */
+
+.header {
+    text-align: center;
+    background: url('../images/header_bg.jpg') center top;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 600px;
+    display: block;
+
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+
+    &.fade {
+        opacity: 0;
+    }
+
+    @include media-query(1080px) {
+        background-size: 1080px auto;
+    }
+}
+
+.header__title {
+    margin-top: 80px;
+    padding-top: 20px;
+
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+
+    &.fade {
+        -webkit-transform: scale(0, 0);
+        -moz-transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+        -o-transform: scale(0, 0);
+        transform: scale(0, 0);
+        opacity: 0;
+        padding-bottom: 30em;
+    }
+}
+
+.header__logo {
+    position: relative;
+    display: block;
+    background-image: url('../images/portfolio_logo-02.png');
+    background-size: 100%;
+    width: 132px;
+    height: 132px;
+    margin: 0 auto ($spacing-unit) auto;
+
+    @include media-query($on-palm) {
+        width: 100px;
+        height: 100px;
+    }
+
+    @include media-query(480px) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.header__name {
+    color: darken($color-blue, 20%);
+    display: inline-block;
+    font-family: $font-title;
+    font-size: $font-size-largest;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: -5px;
+    opacity: 0.95;
+    line-height: 1;
+    text-shadow: 1px 1px 1px rgba(#fff, 0.25);
+    /*padding-bottom: $spacing-unit / 2;*/
+    margin-bottom: $spacing-unit / 2;
+
+    @include media-query($on-palm) {
+        font-size: $font-size-largest * 0.9;
+        margin-bottom: $spacing-unit / 4;
+    }
+
+    @include media-query(480px) {
+        font-size: $font-size-larger;
+        margin-bottom: 0;
+    }
+}
+
+.header__text {
+    font-family: $font-heading;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $color-grey-dark;
+    font-size: $font-size-large;
+    line-height: 1;
+    /*padding: ($spacing-unit / 2) ($spacing-unit / 1.25);*/
+    text-shadow: 1px 1px 1px rgba(#fff, 0.4);
+    /*@include gradientColor($color-grey-dark, darken($color-grey-dark, 10%));*/
+    display: inline-block;
+    /*@include borderRadius(30px, 30px, 30px, 30px);
+    box-shadow: 1px 1px 1px rgba(#fff, 0.25);*/
+
+    @include media-query($on-palm) {
+        font-size: $font-size-medium;
+        /*padding: ($spacing-unit / 2) ($spacing-unit / 1.5);*/
+    }
+
+    @include media-query(480px) {
+        font-size: $font-size-normal;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,39 @@
+# site settings
+
+url: "http://www.tunttunen.fi"
+baseurl: ""
+title: "Panu Tunttunen / Portfolio"
+description: >
+  The portfolio of Panu Tunttunen, a multifaceted web developer.
+
+
+# build settings
+
+markdown: kramdown
+exclude: [
+  "node_modules",
+  "gulpfile.js",
+  "package.json"
+]
+
+
+# personal contact information
+
+contacts:
+  email: "panu@tunttunen.fi"
+  github: tunttunen
+  twitter: tunttunen
+  linkedin: tunttunen
+
+
+# files (included)
+
+# todo: remove these after gulp buildtasks are done with browserify
+css:
+  - "main"
+  - "jquery-ui.min"
+js:
+  - "jquery-2.1.3.min"
+  - "jquery-ui.min"
+  - "gallery"
+  - "main"

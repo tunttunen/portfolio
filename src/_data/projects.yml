@@ -1,0 +1,230 @@
+#
+# 2015
+#
+
+- status: "ongoing"
+  year: 2015-
+  name: "Miitti"
+  type:
+  desc: "Web app backend and frontend"
+  tags: "Node, Mongoose, Express, React, REST"
+  note: "Minimalistic event scheduling app."
+
+
+#
+# 2014
+#
+
+- status: "halted"
+  year: 2014-
+  name: "AngularJS project"
+  type:
+  desc: "Website backend and frontend"
+  tags: "HTML, CSS, PHP, JS, AngularJS, Silex, REST, Photoshop"
+  note: "Wanted to dive into AngularJS so did a frontend accompanied with a REST API done with Silex. Going to revise and use Angular 2 later.."
+
+#
+# halted
+#
+
+- status: "halted"
+  year: 2009-
+  name: "Global Aversion"
+  type:
+  desc: "Browser game"
+  tags: "HTML, CSS, PHP, JS, MySQL, Photoshop"
+  note: "Halted browser game project. Might be bringing it alive later."
+  images:
+    - "projects/globala1.jpg"
+    - "projects/globala2.jpg"
+
+#
+# 2011
+#
+- status: "completed"
+  year: 2011
+  name: "Portfolio"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, jQuery, Photoshop"
+  note: "The year 2011 edition of my portfolio."
+  images:
+    - "projects/portfolio1.png"
+
+#
+# 2010
+#
+
+- status: "completed"
+  year: 2010
+  name: "DDMF IIEQ Pro"
+  type:
+  desc: "Graphics"
+  note: "DDMF IIEQ Pro is an virtual equalization plugin software for digital audio workstations, for which I made a GUI skin."
+  tags: "Photoshop"
+  images:
+    - "projects/iieqpro1.jpg"
+
+#
+# 2009
+#
+
+- status: "completed"
+  year: 2009
+  name: "FL Studio"
+  type:
+  desc: "Graphics"
+  tags: "Photoshop"
+  note: "FL Studio is a digital audio workstation for which I made a GUI skin."
+  images:
+    - "projects/fl_studio_skin1.jpg"
+
+
+#
+# 2008
+#
+
+- status: "completed"
+  year: 2008
+  name: "Global Aversion"
+  type:
+  desc: "Graphic sketch"
+  tags: "Wacom, Photoshop"
+  note: "Unit concept sketch made for my browser game. I practiced Wacom tablet usage and digital drawing."
+  images:
+    - "projects/ga_unitconcept1.jpg"
+    - "projects/ga_unitconcept1_closer.jpg"
+
+- status: "completed"
+  year: 2008
+  name: "FL Studio"
+  type: document
+  desc: "Improvement idea document"
+  tags: "PDF, Word"
+  note: "Feature improvement suggestions for a digital audio workstation software. I am always looking for ways to improve software that I am usin to be more productive."
+  links:
+    - name: "Improvement idea document (PDF)"
+      type: document
+      url: "http://files.tunttunen.fi/shared/docs/FL_studio_ideas.pdf"
+
+#
+# 2006
+#
+
+- status: "completed"
+  year: 2006
+  name: "Les Plages Du Ciel"
+  type:
+  desc: "Digital music project"
+  tags: "FL Studio, Photoshop"
+  note: "House music project experiment."
+  images:
+    - "projects/lpdc.jpg"
+
+- status: "completed"
+  year: 2006
+  name: "Photoshop practice"
+  type:
+  desc: "Graphics sketch"
+  tags: "Photoshop"
+  note: "One of the practice works of 2006. Did this kind of works every now and then."
+  images:
+    - "projects/pnuinflames1.jpg"
+
+- status: "completed"
+  year: 2004&ndash;2008
+  name: "Blazmid"
+  type:
+  desc: "Digital music project"
+  note: "Experimental trance music project."
+  tags: "FL Studio, Reason, Photoshop"
+  images:
+    - "projects/blazmid.png"
+
+#
+# 2003
+#
+
+
+#
+# 2002
+#
+- status: "archived"
+  year: 2002
+  name: "Blazarian v3"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "The third version of my website design (for online gaming clans) website."
+  images:
+    - "projects/blazarian_v3_1.png"
+
+#
+# 2001
+#
+
+- status: "archived"
+  year: 2001
+  name: "Blazarian v2"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "The second version of my web design (for online gaming clans) website."
+  images:
+    - "projects/blazarian_v2_1.png"
+
+- status: "archived"
+  year: 2001
+  name: "BlazaDome"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "Just had to create something again for the webs."
+  images:
+    - "projects/blazadome1.jpg"
+
+#
+# 2000
+#
+- status: "archived"
+  year: 2000
+  name: "Blazarian"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "Created a website to represent myself as a clan website designer. Dreamweaver and FrontPage, oh man."
+  images:
+    - "projects/blazarianv1_1.jpg"
+
+- status: "archived"
+  year: 2000
+  name: "Blazered"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  note: "What's orange in the past, is green in the future."
+  images:
+    - "projects/blazered1.png"
+
+#
+# 1999
+#
+
+- status: "archived"
+  year: 1999
+  name: "PanuWeb"
+  type:
+  desc: "Static website"
+  tags: "HTML, CSS, Photoshop"
+  images:
+    - "projects/panuweb1.jpg"
+  note: "My first website that I published on internet. However, I designed many local websites before this one all the way back to 1996 or something."
+
+- status: "old"
+  year: 1999&ndash;2003
+  name: "Misc. works"
+  desc: "Websites and graphics"
+  tags: "HTML, JavaScript, Flash, Photoshop"
+  images:
+    - "projects/old_projects.jpg"
+  note: "Various works from static websites to some dynamic ones with PHP and JavaScript. Lots of random graphic designs mainly with Photoshop. Macromedia Flash was quite big thing at the time, but did not do that much with it."

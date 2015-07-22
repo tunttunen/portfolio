@@ -1,0 +1,16 @@
+/**
+ * Colors
+ */
+
+$color-white: #ffffff;
+$color-blue: #3FA9F5;
+$color-grey: #828282;
+$color-green: #43c238;
+$color-orange: #f5a62f;
+$color-red: #f74763;
+$color-grey-light: lighten($color-grey, 40%);
+$color-grey-dark: darken($color-grey, 15%);
+
+$text-color: $color-grey-dark;
+$background-color: $color-white;
+$brand-color: $color-red;

@@ -1,0 +1,121 @@
+/**
+ * Post
+ */
+
+.post__title {
+    letter-spacing: -1px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post__content {
+    margin-bottom: $spacing-unit;
+}
+
+.post__bottom-nav {
+
+}
+
+h3.post__bottom-nav__previous {
+    float: left;
+    text-align: left;
+
+    @include media-query($on-palm) {
+        font-size: $font-size-normal;
+        float: none;
+        text-align: center;
+    }
+}
+
+h3.post__bottom-nav__next {
+    float: right;
+    text-align: right;
+
+    @include media-query($on-palm) {
+        font-size: $font-size-normal;
+        float: none;
+        text-align: center;
+    }
+}
+
+h3.post__bottom-nav__return {
+    padding-top: 30px;
+    clear: both;
+    width: auto;
+    display: block;
+    text-align: center;
+
+    @include media-query($on-palm) {
+        font-size: $font-size-normal;
+    }
+}
+
+.video {
+    width: 800px;
+    height: 450px;
+    display: block;
+    margin: 0 auto $spacing-unit auto;
+
+    @include media-query($on-laptop) {
+        width: 600px;
+        height: 338px;
+    }
+
+    @include media-query($on-palm) {
+        width: 400px;
+        height: 225px;
+    }
+
+    @include media-query(400px) {
+        width: 200px;
+        height: 113px;
+    }
+}
+
+
+
+/**
+ * Post-list
+ */
+.post-list {
+    margin-left: 0;
+    list-style: none;
+}
+
+.post-list__item {
+    margin-bottom: $spacing-unit;
+}
+
+h3.post-list__item__meta {
+    font-weight: 400;
+    line-height: 1;
+    color: lighten($color-grey, 30%);
+}
+
+h3.post-list__item__title {
+    line-height: 1;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.post-list__item__link {
+    display: block;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.post-list__item__tags {
+    color: darken($color-white, 25%);
+    font-size: $font-size-small;
+    display: block;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.post-list__item__read-more {
+    display: inline-block;
+    margin-top: $spacing-unit / 2;
+}

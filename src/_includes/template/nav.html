@@ -1,0 +1,24 @@
+<nav class="nav">
+    <div class="wrapper">
+        <a class="nav__logo logo" href="/"></a>
+        <div class="nav__name name">PANU<br/>TUNTTUNEN</div>
+        {% assign pages = site.pages | sort: "order" %}
+        <div class="nav__links">
+            <div class="nav__links__wrapper">
+            {% for _page in pages %}
+            {% if _page.title %}
+                {% assign isActive = '' %}
+                {% if page.url == _page.url %}
+                    {% assign isActive = ' active' %}
+                {% endif %}
+
+                <a class="nav__link{{ isActive }}" href="{{ _page.url | prepend: site.baseurl }}">
+                    {{ _page.icon }}&nbsp;&nbsp;{{ _page.title }}
+                </a>
+            {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+        <a class="nav__menu__btn fa fa-bars" href="#"></a>
+    </div>
+</nav>

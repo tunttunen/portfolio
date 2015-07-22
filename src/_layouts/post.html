@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="page__content">
+    <div class="wrapper post">
+        <header class="post__header">
+            <h2 class="post__title">{{ page.post-title }}</h2>
+            <p class="post__meta">
+                {{ page.date | date: "%d.%m.%Y" }}{% if page.author %}, {{ page.author }}{% endif %}
+                {% if page.meta %} • {{ page.meta }}{% endif %}
+            </p>
+        </header>
+
+        <article class="post__content">
+            {{ content }}
+        </article>
+
+        <div class="post__bottom-nav">
+            <h3 class="post__bottom-nav__previous">
+                {% if page.previous %}
+                <i class="fa fa-caret-left"></i>&nbsp;&nbsp;&nbsp;<a class="post__link" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.post-title }}</a>
+                {% endif %}
+            </h3>
+            <h3 class="post__bottom-nav__next">
+                {% if page.next %}
+                <a class="post__link" href="{{ page.next.url | prepend: site.baseurl }}">{{ page.next.post-title }}</a>&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-right"></i>
+                {% endif %}
+            </h3>
+            <h3 class="post__bottom-nav__return">
+                <a href="/blog">Back to blog</a>
+            </h3>
+        </div>
+    </div>
+</div>

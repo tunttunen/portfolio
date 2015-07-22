@@ -1,0 +1,29 @@
+---
+# This front matter is required by Jekyll
+---
+@charset "utf-8";
+
+// Width of the content area
+$content-width: 800px;
+$on-laptop: 800px;
+$on-palm: 600px;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+
+@import
+    "base/colors",
+    "base/fonts",
+    "base/mixins",
+    "base/jekyll-default";
+
+@import
+    "common",
+    "nav",
+    "header",
+    "front-page",
+    "page",
+    "post",
+    "gallery",
+    "footer",
+    "syntax-highlighting"
+;

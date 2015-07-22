@@ -1,0 +1,296 @@
+/**
+* Gallery
+*/
+
+.gallery__item-view {
+    -webkit-transform:translateZ(10px);
+    -moz-transform:translateZ(10px);
+    -ms-transform:translateZ(10px);
+    -o-transform:translateZ(10px);
+    transform:translateZ(10px);
+}
+
+.gallery__prevent-body-scroll {
+    overflow: hidden;
+}
+
+/**
+ * Group title
+ */
+.gallery__group-title {
+    clear: both;
+    position: relative;
+    width: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: left;
+
+    .wrapper {
+        padding: ($spacing-unit / 2) ($spacing-unit);
+
+        @include media-query($on-palm) {
+            padding: $spacing-unit / 2;
+        }
+    }
+
+    &.halted {
+        background-color: $color-red;
+    }
+
+    &.ongoing {
+        background-color: $color-orange;
+    }
+
+    &.completed {
+        background-color: $color-green;
+    }
+
+    &.old {
+        background-color: $color-blue;
+    }
+}
+
+.gallery__group-title__icon {
+    color: $color-white;
+    font-size: 36px;
+    margin-right: $spacing-unit / 2;
+
+    @include media-query($on-palm) {
+        font-size: $font-size-large;
+    }
+}
+
+h2.gallery__group-title__text {
+    font-family: $font-heading;
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    display: inline-block;
+    color: $color-white;
+
+    @include media-query($on-palm) {
+        font-size: $font-size-large;
+    }
+}
+
+
+
+
+.gallery-item-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Gallery item view
+ */
+.gallery__item-view {
+    background-color: rgba(#000, 0.9);
+    position: fixed;
+    display: none;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5000;
+    cursor: pointer;
+    overflow: scroll;
+}
+
+.gallery__item-view__title {
+    font-size: $font-size-large;
+    font-family: $font-heading;
+    position: relative;
+    color: $color-white;
+    width: auto;
+    padding: ($spacing-unit / 2);
+    line-height: 1;
+    @include gradientColor(darken($color-grey-dark, 10%), darken($color-grey-dark, 16%));
+
+    span {
+        float: right;
+    }
+
+    @include media-query($on-palm) {
+        font-size: $font-size-normal;
+    }
+}
+
+.gallery__item-view__image {
+    position: relative;
+    display: block;
+    margin: $spacing-unit auto;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    overflow: scroll;
+}
+
+
+
+/*
+ * Gallery item
+ */
+.gallery__item__wrapper {
+    display: block;
+    float: left;
+    position: relative;
+    width: 50%;
+    margin-bottom: $spacing-unit;
+
+    &.clear {
+        clear: both;
+    }
+
+    &.collage {
+        float: none;
+        width: auto;
+        background-size: contain;
+    }
+
+    @include media-query($on-laptop) {
+        width: 100%;
+    }
+}
+
+.gallery__item {
+    background-color: darken($color-white, 5%);
+    border: 1px solid darken($color-white, 10%);
+    box-shadow: 2px 2px 10px rgba(#000000, 0.05);
+    margin: $spacing-unit / 4;
+
+    @include media-query($on-palm) {
+        margin: 0;
+    }
+}
+
+/* Item title */
+.gallery__item__title {
+    color: $color-grey-dark;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    /*background-color: $color-grey-dark;*/
+    display: block;
+    font-family: $font-heading;
+    font-weight: 400;
+    font-size: $font-size-medium;
+    line-height: 24px;
+    position: relative;
+    @include borderRadius(3px, 3px, 0, 0);
+    padding: ($spacing-unit / 2);
+    text-transform: uppercase;
+
+    span {
+        color: darken($color-white, 40%);
+        float: right;
+        display: block;
+        padding: 0;
+        font-family: $font-heading;
+        font-size: $font-size-normal;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    }
+
+    @include media-query($on-palm) {
+        font-size: $font-size-medium;
+        line-height: 1;
+
+        span {
+            float: none;
+        }
+    }
+}
+
+/* Item image */
+.gallery__item__image__wrapper {
+    margin: 1px -1px 0 -1px;
+}
+
+.gallery__item__image {
+    display: block;
+    background-color: $color-grey-dark;
+    width: auto;
+    padding-bottom: 60%;
+    @include innerShadow(60px, 0.2);
+    cursor: pointer;
+}
+
+.gallery__item__image--collage {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include innerShadow(60px, 0.2);
+}
+
+/* Item tags */
+.gallery__item__tags {
+    /* margin-bottom: $spacing-unit / 2; */
+}
+
+.gallery__item__tag {
+    font-family: $font-text;
+    display: inline-block;
+    line-height: 1;
+    text-shadow: 1px 1px 1px rgba(#fff, 0.6);
+    color: $color-grey-dark;
+    font-size: $font-size-smallest;
+    font-weight: 400;
+    padding: 6px 12px;
+    border: 1px solid darken($color-white, 30%);
+    @include innerShadow(6px, 0.1);
+    @include borderRadius(20px, 20px, 20px, 20px);
+    background-color: lighten($color-blue, 30%);
+    margin-bottom: 3px;
+}
+
+/* Item desc */
+.gallery__item__desc {
+    display: block;
+    font-family: $font-heading;
+    text-transform: uppercase;
+    font-size: $font-size-normal;
+    line-height: 1;
+    position: relative;
+    padding: ($spacing-unit / 4) ($spacing-unit / 2);
+    width: auto;
+    @include innerShadow(60px, 0.08);
+    margin: 0 -1px;
+    border-top: 1px solid darken($color-white, 15%);
+    border-bottom: 1px solid darken($color-white, 15%);
+
+    color: darken($color-blue, 20%);
+    font-weight: 400;
+}
+
+/* Item note */
+.gallery__item__note {
+    padding: 0 0 ($spacing-unit / 2) 0;
+    color: $color-grey;
+    margin: 0;
+}
+
+/* Item links */
+.gallery__item__links {
+    display: block;
+    margin-top: $spacing-unit / 2;
+
+    .fa {
+        color: $color-grey;
+        margin-right: $spacing-unit / 4;
+    }
+}
+
+.gallery__item__link {
+
+}
+
+/* Item info container */
+.gallery__item__info {
+    position: relative;
+    font-size: $font-size-normal;
+    line-height: 1.5em;
+    padding: ($spacing-unit / 2);
+    margin-bottom: 0;
+    font-weight: 300;
+    @include borderRadius(0, 0, 3px, 3px);
+}
